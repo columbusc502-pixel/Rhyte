@@ -1,0 +1,7 @@
+{
+  "name": "Rhyte - Intelligent Lyric Writing & Flow Studio",
+  "description": "A modern lyric-writing studio for songwriters, rappers, poets, and creative writers with instant rhymes, syllable counting, cadence tracking, and freestyle mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

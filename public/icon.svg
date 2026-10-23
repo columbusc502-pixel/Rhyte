@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b0e"/>
+      <stop offset="50%" stop-color="#141724"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-opacity="0.3"/>
+
+  <!-- Soundwave Rhythm Bars behind logo -->
+  <g opacity="0.35">
+    <rect x="96" y="216" width="12" height="80" rx="6" fill="#00e5ff" />
+    <rect x="120" y="176" width="12" height="160" rx="6" fill="#00e5ff" />
+    <rect x="144" y="136" width="12" height="240" rx="6" fill="#6366f1" />
+    <rect x="356" y="136" width="12" height="240" rx="6" fill="#6366f1" />
+    <rect x="380" y="176" width="12" height="160" rx="6" fill="#a855f7" />
+    <rect x="404" y="216" width="12" height="80" rx="6" fill="#a855f7" />
+  </g>
+
+  <!-- Outer Ambient Glow Circle -->
+  <circle cx="256" cy="256" r="160" fill="url(#glowGrad)" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Main 'R' Stylized Lyric Glyph -->
+  <g filter="url(#glow)">
+    <!-- Vertical stem -->
+    <path d="M188 128 L256 128 C308 128 344 156 344 204 C344 244 316 270 274 278 L348 384 L294 384 L228 288 L188 288 L188 384 L144 384 L144 128 L188 128 Z M188 168 L188 248 L250 248 C280 248 300 232 300 208 C300 184 280 168 250 168 L188 168 Z" fill="url(#accentGrad)" />
+  </g>
+
+  <!-- Lyrical Rhyme Dot Accent -->
+  <circle cx="360" cy="144" r="14" fill="#00e5ff" filter="url(#glow)"/>
+  <circle cx="360" cy="144" r="7" fill="#ffffff"/>
+</svg>
